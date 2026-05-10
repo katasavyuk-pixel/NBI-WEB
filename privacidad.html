@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Política de privacidad · NBI — ianexora.com</title>
+<meta name="description" content="Política de privacidad de NBI · cómo tratamos los datos personales recogidos a través de ianexora.com en cumplimiento del RGPD y la LOPDGDD." />
+<meta name="robots" content="noindex,follow" />
+<link rel="canonical" href="https://ianexora.com/privacidad.html" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#ffffff; --bg-2:#f5f7fb; --bg-3:#eef2f8;
+    --line:rgba(26,36,64,.09); --line-2:rgba(26,36,64,.16);
+    --ink:#1a2440; --ink-2:#3a4665; --ink-mute:#6b7794; --ink-dim:#9aa3b8;
+    --cyan:#00d4ff; --cyan-soft:#67e8ff; --cyan-deep:#0aa9ce;
+    --grad: linear-gradient(120deg, #00d4ff 0%, #0aa9ce 50%, #1a2440 100%);
+    --maxw: 880px; --pad: clamp(20px, 4vw, 56px);
+    --font-display:"Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+    --font-mono:"JetBrains Mono", ui-monospace, monospace;
+  }
+  *,*::before,*::after{ box-sizing:border-box }
+  html,body{ margin:0; padding:0 }
+  body{
+    background: var(--bg); color: var(--ink); font-family: var(--font-display);
+    -webkit-font-smoothing: antialiased; line-height:1.6;
+  }
+  a{ color: var(--cyan-deep); font-weight:500; text-decoration: none; border-bottom: 1px solid rgba(0,212,255,.4); transition: border-color .2s, color .2s }
+  a:hover{ border-color: var(--cyan-deep); color: var(--ink) }
+  a:focus-visible{ outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 3px }
+  .ambient{
+    position: fixed; inset:0; z-index:-1; pointer-events:none;
+    background:
+      radial-gradient(900px 500px at 80% -10%, rgba(0,212,255,.06), transparent 60%),
+      radial-gradient(700px 500px at -10% 30%, rgba(26,36,64,.03), transparent 55%);
+  }
+  .wrap{ width:100%; max-width: var(--maxw); margin:0 auto; padding: 0 var(--pad) }
+  .nav{
+    position: sticky; top:0; z-index: 50;
+    background: rgba(255,255,255,.85); backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 1px 0 rgba(26,36,64,.04);
+  }
+  .nav .row{ display:flex; align-items:center; justify-content:space-between; height:64px; max-width: var(--maxw); margin:0 auto; padding: 0 var(--pad) }
+  .brand{ display:flex; align-items:center; gap:12px; color: var(--ink); border:0 }
+  .brand-mark{
+    height: 26px; width: auto;
+    color: var(--ink); display: block; flex-shrink: 0;
+    filter: drop-shadow(0 0 10px rgba(0,212,255,.18));
+    transition: filter .3s ease;
+  }
+  .brand:hover .brand-mark{ filter: drop-shadow(0 0 14px rgba(0,212,255,.32)) }
+  .brand-mark .nbi-dot{ fill: var(--cyan) }
+  .brand-mark .nbi-eco{ opacity: .4 }
+  .brand-name{ font-weight:600; font-size:14px; letter-spacing:-.01em }
+  .nav .back{ font-family: var(--font-mono); font-size:12px; color: var(--ink-mute); border:0 }
+  .nav .back:hover{ color: var(--cyan-soft) }
+
+  main{ padding: 64px 0 96px }
+  .doc-head{ margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--line) }
+  .doc-head .kicker{
+    font-family: var(--font-mono); font-size: 11px; letter-spacing:.16em; text-transform:uppercase;
+    color: var(--cyan-deep); display:inline-flex; align-items:center; gap:10px;
+  }
+  .doc-head .kicker::before{ content:""; width:24px; height:1px; background:var(--cyan); opacity:.9 }
+  h1{
+    font-family: var(--font-display); font-weight:600; font-size: clamp(32px, 4.5vw, 48px);
+    letter-spacing:-0.025em; line-height:1.05; margin: 18px 0 12px;
+  }
+  .updated{ font-family: var(--font-mono); font-size:12px; color: var(--ink-mute); letter-spacing:.06em }
+
+  h2{ font-family: var(--font-display); font-weight:600; font-size: clamp(20px, 2.4vw, 26px); letter-spacing:-0.015em; margin: 48px 0 16px; color: var(--ink) }
+  h3{ font-family: var(--font-display); font-weight:500; font-size: 17px; margin: 28px 0 10px; color: var(--ink) }
+  p,ul,ol{ color: var(--ink-2); font-size:15.5px; line-height:1.7; margin: 0 0 16px }
+  ul,ol{ padding-left: 22px }
+  li{ margin-bottom: 8px }
+  strong{ color: var(--ink); font-weight:500 }
+  code{ font-family: var(--font-mono); font-size: .9em; background: var(--bg-3); padding: 2px 6px; border-radius: 4px; color: var(--cyan-deep) }
+
+  .info-card{
+    margin: 32px 0; border: 1px solid var(--line); border-radius: 14px;
+    background: var(--bg-2);
+    padding: 24px;
+  }
+  .info-card h3{ margin-top: 0 }
+  .info-card dl{ margin: 0; display:grid; grid-template-columns: max-content 1fr; gap: 8px 20px; font-size: 14px }
+  .info-card dt{ color: var(--ink-mute); font-family: var(--font-mono); font-size: 11.5px; letter-spacing:.08em; text-transform: uppercase; padding-top: 2px }
+  .info-card dd{ margin: 0; color: var(--ink) }
+
+  .draft-note{
+    margin: 32px 0; padding: 18px 22px;
+    border: 1px dashed rgba(217,119,6,.4); border-radius: 12px;
+    background: rgba(217,119,6,.06); color: #92400e;
+    font-size: 13.5px; line-height:1.6;
+  }
+  .draft-note b{ color: #78350f }
+
+  table{
+    width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px;
+    border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
+    background: var(--bg);
+  }
+  thead th{
+    background: var(--bg-2); color: var(--ink); font-weight:600;
+    font-family: var(--font-mono); font-size: 11px; letter-spacing:.1em; text-transform:uppercase;
+    text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--line);
+  }
+  tbody td{ padding: 12px 16px; border-bottom: 1px solid var(--line); color: var(--ink-2); vertical-align: top }
+  tbody tr:last-child td{ border-bottom: 0 }
+
+  footer{ border-top: 1px solid var(--line); padding: 32px 0; color: var(--ink-mute); font-family: var(--font-mono); font-size:11.5px; letter-spacing:.06em; background: var(--bg-2) }
+  footer .row{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px }
+  footer a{ color: var(--ink-mute); border:0; font-weight: 400 }
+  footer a:hover{ color: var(--cyan-deep) }
+</style>
+</head>
+<body>
+
+<div class="ambient"></div>
+
+<nav class="nav">
+  <div class="row">
+    <a href="index.html" class="brand" aria-label="NBI · Volver al inicio">
+      <svg class="brand-mark" viewBox="0 0 156 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g fill="currentColor">
+          <rect x="0" y="0" width="9" height="60" rx="1"/>
+          <polygon points="9,0 18,0 54,48 54,0 63,0 63,60 54,60 18,12 18,60 9,60"/>
+          <rect class="nbi-eco" x="13" y="6" width="3" height="54" rx=".5"/>
+          <rect class="nbi-eco" x="67" y="0" width="3" height="54" rx=".5"/>
+          <path fill-rule="evenodd" d="M 80 0 H 105 Q 119 0 119 13 Q 119 23 110 27 Q 124 30 124 43 Q 124 60 105 60 H 80 Z M 89 8 V 23 H 105 Q 110 23 110 15.5 Q 110 8 105 8 Z M 89 32 V 52 H 105 Q 114 52 114 42 Q 114 32 105 32 Z"/>
+          <rect x="132" y="0" width="9" height="42" rx="1.5"/>
+        </g>
+        <circle class="nbi-dot" cx="136.5" cy="55" r="6.2"/>
+      </svg>
+      <span class="brand-name">NBI</span>
+    </a>
+    <a href="index.html" class="back">← Volver al inicio</a>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+    <div class="doc-head">
+      <span class="kicker">Información legal</span>
+      <h1>Política de privacidad</h1>
+      <div class="updated">Última actualización · 9 de mayo de 2026</div>
+    </div>
+
+    <div class="draft-note">
+      <b>Borrador.</b> Documento base orientado a cumplimiento RGPD/LOPDGDD. Antes del lanzamiento público, completar los campos marcados <code>[pendiente]</code> y validar con asesoría jurídica los apartados de cesiones internacionales y conservación.
+    </div>
+
+    <h2>1. Responsable del tratamiento</h2>
+    <p>De conformidad con el Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD), el responsable del tratamiento de los datos personales que se faciliten a través de este sitio web es:</p>
+
+    <div class="info-card">
+      <dl>
+        <dt>Responsable</dt> <dd>Katalin Ivanovych — NBI · Nexora Business Intelligence</dd>
+        <dt>NIF</dt>         <dd><span style="color:var(--ink-mute)">[pendiente — alta autónoma]</span></dd>
+        <dt>Domicilio</dt>   <dd>Gipuzkoa, España</dd>
+        <dt>Email</dt>       <dd><a href="mailto:nexoraprocesos@gmail.com">nexoraprocesos@gmail.com</a></dd>
+        <dt>DPO</dt>         <dd>No procede — la actividad no requiere designación de Delegado de Protección de Datos.</dd>
+      </dl>
+    </div>
+
+    <h2>2. Qué datos recogemos y con qué finalidad</h2>
+
+    <h3>2.1 Formulario de contacto / solicitud de diagnóstico</h3>
+    <p>Cuando rellenas el formulario en la web introduciendo tu dirección de correo electrónico, dichos datos se utilizan para:</p>
+    <ul>
+      <li>Abrir el agendador externo (Calendly) con tu email pre-rellenado.</li>
+      <li>Atender tu solicitud de diagnóstico inicial.</li>
+      <li>Comunicarnos contigo en relación con esa consulta.</li>
+    </ul>
+
+    <h3>2.2 Agenda con Calendly</h3>
+    <p>Al reservar una llamada a través del widget integrado de Calendly se recogen, además: nombre, email, fecha y hora seleccionada, y cualquier dato adicional que decidas incluir en los campos del formulario. Estos datos se procesan en la plataforma de Calendly bajo su propia política de privacidad — ver apartado 5.</p>
+
+    <h3>2.3 Comunicaciones por email</h3>
+    <p>Cuando nos escribes directamente a <a href="mailto:nexoraprocesos@gmail.com">nexoraprocesos@gmail.com</a>, tratamos tu dirección y el contenido del mensaje para responder a tu consulta y, si procede, gestionar la relación comercial.</p>
+
+    <h2>3. Base legitimadora</h2>
+    <ul>
+      <li><strong>Consentimiento</strong> del usuario al rellenar voluntariamente el formulario o iniciar el contacto (artículo 6.1.a RGPD).</li>
+      <li><strong>Ejecución de un contrato</strong> o aplicación de medidas precontractuales a petición del interesado (artículo 6.1.b RGPD), cuando la consulta deriva en una propuesta comercial.</li>
+      <li><strong>Interés legítimo</strong> del responsable para responder a comunicaciones recibidas y mantener un registro mínimo de la interacción (artículo 6.1.f RGPD).</li>
+    </ul>
+
+    <h2>4. Plazo de conservación</h2>
+    <p>Los datos se conservarán durante el tiempo necesario para cumplir la finalidad para la que fueron recabados:</p>
+    <ul>
+      <li>Solicitudes que <strong>no derivan en relación contractual</strong>: hasta 12 meses desde el último contacto, salvo solicitud expresa anterior de supresión.</li>
+      <li>Solicitudes que <strong>sí derivan en relación contractual</strong>: durante toda la vigencia de la relación y, posteriormente, durante los plazos legales de conservación (6 años fiscales / 5 años civiles según corresponda).</li>
+    </ul>
+
+    <h2>5. Destinatarios y cesiones de datos</h2>
+    <p>No se ceden datos a terceros salvo a los siguientes encargados o subcontratistas que prestan servicios al responsable:</p>
+
+    <table>
+      <thead>
+        <tr><th>Servicio</th><th>Finalidad</th><th>Ubicación</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Calendly</strong></td>
+          <td>Agendador de reuniones</td>
+          <td>EE. UU. — Transferencia bajo el Marco de Privacidad de Datos UE-EE.UU. (Data Privacy Framework) <a href="https://calendly.com/privacy" target="_blank" rel="noopener">Política Calendly</a></td>
+        </tr>
+        <tr>
+          <td><strong>Google Workspace</strong></td>
+          <td>Gestión del correo nexoraprocesos@gmail.com</td>
+          <td>EE. UU. — Transferencia bajo el Marco de Privacidad de Datos UE-EE.UU.</td>
+        </tr>
+        <tr>
+          <td><strong>Plausible / Umami</strong></td>
+          <td>Analítica web agregada y anónima, sin cookies</td>
+          <td>UE (Plausible: Alemania · Umami: self-hosted UE)</td>
+        </tr>
+        <tr>
+          <td><strong>Proveedor de hosting</strong></td>
+          <td>Alojamiento del sitio web estático</td>
+          <td><span style="color:var(--ink-mute)">[pendiente — Vercel / Netlify según deploy]</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>6. Tus derechos</h2>
+    <p>En cualquier momento puedes ejercer los siguientes derechos sobre tus datos personales (derechos ARSULIPO):</p>
+    <ul>
+      <li><strong>Acceso</strong> · saber qué datos tratamos sobre ti.</li>
+      <li><strong>Rectificación</strong> · corregir datos inexactos.</li>
+      <li><strong>Supresión</strong> · pedir que borremos tus datos cuando ya no sean necesarios.</li>
+      <li><strong>Oposición</strong> · oponerte al tratamiento basado en interés legítimo.</li>
+      <li><strong>Limitación</strong> · pedir que restrinjamos el tratamiento.</li>
+      <li><strong>Portabilidad</strong> · recibir tus datos en formato estructurado.</li>
+      <li><strong>Retirada del consentimiento</strong> · cuando esa sea la base del tratamiento.</li>
+    </ul>
+    <p>Para ejercer cualquiera de estos derechos, escríbenos a <a href="mailto:nexoraprocesos@gmail.com">nexoraprocesos@gmail.com</a> indicando claramente cuál ejerces y aportando documento que acredite tu identidad. Responderemos en el plazo máximo de un mes.</p>
+    <p>Si consideras que el tratamiento no se ajusta a la normativa, tienes derecho a presentar una reclamación ante la <strong>Agencia Española de Protección de Datos</strong> (<a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>).</p>
+
+    <h2>7. Medidas de seguridad</h2>
+    <p>Adoptamos las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado. Trabajamos con proveedores que aportan las garantías suficientes en materia de protección de datos (encriptación en tránsito y reposo, autenticación robusta, registros de acceso).</p>
+
+    <h2>8. Cambios en esta política</h2>
+    <p>Podemos actualizar esta política para reflejar cambios en nuestros tratamientos o en la normativa. La fecha de última actualización aparece al inicio del documento.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <span>© 2026 NBI · Nexora Business Intelligence</span>
+      <span><a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a> · <a href="aviso-legal.html">Aviso legal</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

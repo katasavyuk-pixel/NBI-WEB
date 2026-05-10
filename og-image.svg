@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f5f7fb"/>
+    </linearGradient>
+    <radialGradient id="glowCyan" cx=".15" cy=".25" r=".6">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowInk" cx=".85" cy=".85" r=".55">
+      <stop offset="0%" stop-color="#1a2440" stop-opacity=".10"/>
+      <stop offset="100%" stop-color="#1a2440" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grad" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="50%" stop-color="#0aa9ce"/>
+      <stop offset="100%" stop-color="#1a2440"/>
+    </linearGradient>
+    <radialGradient id="dotGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0%" stop-color="#67e8ff" stop-opacity=".6"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M 72 0 L 0 0 0 72" fill="none" stroke="rgba(26,36,64,.045)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glowCyan)"/>
+  <rect width="1200" height="630" fill="url(#glowInk)"/>
+
+  <!-- top brand row: NBI! symbol + Nexora Business Intelligence text -->
+  <g transform="translate(80, 80)">
+    <g transform="scale(1.5)" fill="#1a2440">
+      <rect x="0" y="0" width="9" height="60" rx="1"/>
+      <polygon points="9,0 18,0 54,48 54,0 63,0 63,60 54,60 18,12 18,60 9,60"/>
+      <rect x="13" y="6" width="3" height="54" rx=".5" opacity=".4"/>
+      <rect x="67" y="0" width="3" height="54" rx=".5" opacity=".4"/>
+      <path fill-rule="evenodd" d="M 80 0 H 105 Q 119 0 119 13 Q 119 23 110 27 Q 124 30 124 43 Q 124 60 105 60 H 80 Z M 89 8 V 23 H 105 Q 110 23 110 15.5 Q 110 8 105 8 Z M 89 32 V 52 H 105 Q 114 52 114 42 Q 114 32 105 32 Z"/>
+      <rect x="132" y="0" width="9" height="42" rx="1.5"/>
+    </g>
+    <circle cx="219" cy="78" r="14" fill="url(#dotGlow)" opacity=".7"/>
+    <circle cx="219" cy="78" r="9" fill="#00d4ff"/>
+
+    <text x="270" y="40" font-family="Space Grotesk, system-ui, sans-serif" font-size="34" font-weight="600" fill="#1a2440" letter-spacing="-1">NBI</text>
+    <text x="270" y="74" font-family="JetBrains Mono, monospace" font-size="13" fill="#6b7794" letter-spacing="2.5">NEXORA · BUSINESS INTELLIGENCE</text>
+  </g>
+
+  <!-- pill: estado piloto -->
+  <g transform="translate(80, 240)">
+    <rect width="290" height="36" rx="18" fill="#ffffff" stroke="rgba(26,36,64,.16)"/>
+    <circle cx="22" cy="18" r="4.5" fill="#00d4ff"/>
+    <text x="40" y="23" font-family="JetBrains Mono, monospace" font-size="11.5" fill="#3a4665" letter-spacing="2">IA APLICADA A OPERACIONES REALES</text>
+  </g>
+
+  <!-- main headline -->
+  <g transform="translate(80, 308)">
+    <text font-family="Space Grotesk, system-ui, sans-serif" font-size="80" font-weight="600" fill="#1a2440" letter-spacing="-3">
+      <tspan x="0" dy="0">Agentes IA</tspan>
+      <tspan x="0" dy="88" font-style="italic" fill="url(#grad)" font-family="Instrument Serif, serif" font-weight="400">que trabajan</tspan>
+      <tspan x="0" dy="88">por tu empresa.</tspan>
+    </text>
+  </g>
+
+  <!-- bottom row: tagline + url -->
+  <g transform="translate(80, 575)">
+    <text font-family="Space Grotesk, system-ui, sans-serif" font-size="18" fill="#3a4665">Diagnóstico · Sistema Logística · Agentes Custom</text>
+  </g>
+  <g transform="translate(1120, 590)" text-anchor="end">
+    <text font-family="JetBrains Mono, monospace" font-size="14" fill="#0aa9ce" letter-spacing="2.5">IANEXORA.COM</text>
+  </g>
+
+  <!-- decorative right-side mark -->
+  <g transform="translate(820, 200)" opacity=".85">
+    <circle cx="160" cy="160" r="220" fill="none" stroke="rgba(0,212,255,.18)" stroke-dasharray="2 7"/>
+    <circle cx="160" cy="160" r="170" fill="none" stroke="rgba(26,36,64,.12)" stroke-dasharray="1 4"/>
+    <circle cx="160" cy="160" r="115" fill="none" stroke="rgba(26,36,64,.08)"/>
+    <g transform="translate(60, 100) scale(2)" fill="#1a2440">
+      <rect x="0" y="0" width="9" height="60" rx="1"/>
+      <polygon points="9,0 18,0 54,48 54,0 63,0 63,60 54,60 18,12 18,60 9,60"/>
+      <rect x="13" y="6" width="3" height="54" rx=".5" opacity=".4"/>
+      <rect x="67" y="0" width="3" height="54" rx=".5" opacity=".4"/>
+      <path fill-rule="evenodd" d="M 80 0 H 105 Q 119 0 119 13 Q 119 23 110 27 Q 124 30 124 43 Q 124 60 105 60 H 80 Z M 89 8 V 23 H 105 Q 110 23 110 15.5 Q 110 8 105 8 Z M 89 32 V 52 H 105 Q 114 52 114 42 Q 114 32 105 32 Z"/>
+      <rect x="132" y="0" width="9" height="42" rx="1.5"/>
+    </g>
+    <circle cx="338" cy="256" r="22" fill="url(#dotGlow)" opacity=".8"/>
+    <circle cx="338" cy="256" r="14" fill="#00d4ff"/>
+  </g>
+</svg>
