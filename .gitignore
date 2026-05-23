@@ -27,3 +27,13 @@ build/
 .env
 .env.local
 .env.*.local
+.vercel
+
+# Agent / IDE configs
+.agents/
+.claude/
+skills-lock.json
+
+# Auditing and Lighthouse
+lighthouse-results*.json
+lighthouse-reports/

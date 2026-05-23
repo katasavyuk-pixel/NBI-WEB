@@ -6,12 +6,15 @@
 <title>Política de privacidad · NBI — ianexora.com</title>
 <meta name="description" content="Política de privacidad de NBI · cómo tratamos los datos personales recogidos a través de ianexora.com en cumplimiento del RGPD y la LOPDGDD." />
 <meta name="robots" content="noindex,follow" />
-<link rel="canonical" href="https://ianexora.com/privacidad.html" />
+<link rel="canonical" href="https://ianexora.com/privacidad" />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+</noscript>
 
 <style>
   :root{
@@ -101,9 +104,16 @@
   }
   .draft-note b{ color: #78350f }
 
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 20px 0;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+  }
   table{
-    width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px;
-    border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
+    width: 100%; border-collapse: collapse; font-size: 14px;
     background: var(--bg);
   }
   thead th{
@@ -126,21 +136,32 @@
 
 <nav class="nav">
   <div class="row">
-    <a href="index.html" class="brand" aria-label="NBI · Volver al inicio">
-      <svg class="brand-mark" viewBox="0 0 156 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <a href="/" class="brand" aria-label="NBI · Volver al inicio">
+      <svg class="brand-mark" viewBox="0 0 143 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <mask id="nm-pr" maskUnits="userSpaceOnUse" x="-10" y="-25" width="80" height="115">
+            <rect x="0" y="0" width="12" height="64" rx="2" fill="white"/>
+            <polygon points="12,0 24,0 40,64 28,64" fill="white"/>
+            <rect x="40" y="0" width="12" height="64" rx="2" fill="white"/>
+            <line x1="6" y1="-20" x2="45" y2="84" stroke="black" stroke-width="8"/>
+            <line x1="19" y1="-20" x2="58" y2="84" stroke="black" stroke-width="8"/>
+          </mask>
+          <mask id="bm-pr" maskUnits="userSpaceOnUse" x="52" y="-25" width="90" height="115">
+            <path fill-rule="evenodd" fill="white" d="M62,0 H95 Q113,0 113,14 Q113,24 102,29 Q120,32 120,46 Q120,64 95,64 H62 Z M74,8 V24 H95 Q102,24 102,17 Q102,8 95,8 Z M74,34 V56 H95 Q107,56 107,45 Q107,34 95,34 Z"/>
+            <line x1="70" y1="-20" x2="109" y2="84" stroke="black" stroke-width="8"/>
+            <line x1="83" y1="-20" x2="122" y2="84" stroke="black" stroke-width="8"/>
+          </mask>
+        </defs>
         <g fill="currentColor">
-          <rect x="0" y="0" width="9" height="60" rx="1"/>
-          <polygon points="9,0 18,0 54,48 54,0 63,0 63,60 54,60 18,12 18,60 9,60"/>
-          <rect class="nbi-eco" x="13" y="6" width="3" height="54" rx=".5"/>
-          <rect class="nbi-eco" x="67" y="0" width="3" height="54" rx=".5"/>
-          <path fill-rule="evenodd" d="M 80 0 H 105 Q 119 0 119 13 Q 119 23 110 27 Q 124 30 124 43 Q 124 60 105 60 H 80 Z M 89 8 V 23 H 105 Q 110 23 110 15.5 Q 110 8 105 8 Z M 89 32 V 52 H 105 Q 114 52 114 42 Q 114 32 105 32 Z"/>
-          <rect x="132" y="0" width="9" height="42" rx="1.5"/>
+          <rect mask="url(#nm-pr)" x="0" y="0" width="52" height="64"/>
+          <rect mask="url(#bm-pr)" x="62" y="0" width="60" height="64"/>
+          <rect x="126" y="0" width="10" height="44" rx="3"/>
         </g>
-        <circle class="nbi-dot" cx="136.5" cy="55" r="6.2"/>
+        <circle class="nbi-dot" cx="131" cy="57" r="7"/>
       </svg>
       <span class="brand-name">NBI</span>
     </a>
-    <a href="index.html" class="back">← Volver al inicio</a>
+    <a href="/" class="back">← Volver al inicio</a>
   </div>
 </nav>
 
@@ -161,10 +182,10 @@
 
     <div class="info-card">
       <dl>
-        <dt>Responsable</dt> <dd>Katalin Ivanovych — NBI · Nexora Business Intelligence</dd>
+        <dt>Responsable</dt> <dd>Katalin Savyuk — NBI · Nexora Business Intelligence</dd>
         <dt>NIF</dt>         <dd><span style="color:var(--ink-mute)">[pendiente — alta autónoma]</span></dd>
         <dt>Domicilio</dt>   <dd>Gipuzkoa, España</dd>
-        <dt>Email</dt>       <dd><a href="mailto:nexoraprocesos@gmail.com">nexoraprocesos@gmail.com</a></dd>
+        <dt>Email</dt>       <dd><a href="mailto:info@ianexora.com">info@ianexora.com</a></dd>
         <dt>DPO</dt>         <dd>No procede — la actividad no requiere designación de Delegado de Protección de Datos.</dd>
       </dl>
     </div>
@@ -183,7 +204,7 @@
     <p>Al reservar una llamada a través del widget integrado de Calendly se recogen, además: nombre, email, fecha y hora seleccionada, y cualquier dato adicional que decidas incluir en los campos del formulario. Estos datos se procesan en la plataforma de Calendly bajo su propia política de privacidad — ver apartado 5.</p>
 
     <h3>2.3 Comunicaciones por email</h3>
-    <p>Cuando nos escribes directamente a <a href="mailto:nexoraprocesos@gmail.com">nexoraprocesos@gmail.com</a>, tratamos tu dirección y el contenido del mensaje para responder a tu consulta y, si procede, gestionar la relación comercial.</p>
+    <p>Cuando nos escribes directamente a <a href="mailto:info@ianexora.com">info@ianexora.com</a>, tratamos tu dirección y el contenido del mensaje para responder a tu consulta y, si procede, gestionar la relación comercial.</p>
 
     <h2>3. Base legitimadora</h2>
     <ul>
@@ -202,33 +223,30 @@
     <h2>5. Destinatarios y cesiones de datos</h2>
     <p>No se ceden datos a terceros salvo a los siguientes encargados o subcontratistas que prestan servicios al responsable:</p>
 
-    <table>
-      <thead>
-        <tr><th>Servicio</th><th>Finalidad</th><th>Ubicación</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Calendly</strong></td>
-          <td>Agendador de reuniones</td>
-          <td>EE. UU. — Transferencia bajo el Marco de Privacidad de Datos UE-EE.UU. (Data Privacy Framework) <a href="https://calendly.com/privacy" target="_blank" rel="noopener">Política Calendly</a></td>
-        </tr>
-        <tr>
-          <td><strong>Google Workspace</strong></td>
-          <td>Gestión del correo nexoraprocesos@gmail.com</td>
-          <td>EE. UU. — Transferencia bajo el Marco de Privacidad de Datos UE-EE.UU.</td>
-        </tr>
-        <tr>
-          <td><strong>Plausible / Umami</strong></td>
-          <td>Analítica web agregada y anónima, sin cookies</td>
-          <td>UE (Plausible: Alemania · Umami: self-hosted UE)</td>
-        </tr>
-        <tr>
-          <td><strong>Proveedor de hosting</strong></td>
-          <td>Alojamiento del sitio web estático</td>
-          <td><span style="color:var(--ink-mute)">[pendiente — Vercel / Netlify según deploy]</span></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr><th>Servicio</th><th>Finalidad</th><th>Ubicación</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Google Workspace</strong></td>
+            <td>Gestión del correo info@ianexora.com</td>
+            <td>EE. UU. — Transferencia bajo el Marco de Privacidad de Datos UE-EE.UU.</td>
+          </tr>
+          <tr>
+            <td><strong>Plausible / Umami</strong></td>
+            <td>Analítica web agregada y anónima, sin cookies</td>
+            <td>UE (Plausible: Alemania · Umami: self-hosted UE)</td>
+          </tr>
+          <tr>
+            <td><strong>Proveedor de hosting</strong></td>
+            <td>Alojamiento del sitio web estático</td>
+            <td><span style="color:var(--ink-mute)">[pendiente — Vercel / Netlify según deploy]</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <h2>6. Tus derechos</h2>
     <p>En cualquier momento puedes ejercer los siguientes derechos sobre tus datos personales (derechos ARSULIPO):</p>
@@ -241,7 +259,7 @@
       <li><strong>Portabilidad</strong> · recibir tus datos en formato estructurado.</li>
       <li><strong>Retirada del consentimiento</strong> · cuando esa sea la base del tratamiento.</li>
     </ul>
-    <p>Para ejercer cualquiera de estos derechos, escríbenos a <a href="mailto:nexoraprocesos@gmail.com">nexoraprocesos@gmail.com</a> indicando claramente cuál ejerces y aportando documento que acredite tu identidad. Responderemos en el plazo máximo de un mes.</p>
+    <p>Para ejercer cualquiera de estos derechos, escríbenos a <a href="mailto:info@ianexora.com">info@ianexora.com</a> indicando claramente cuál ejerces y aportando documento que acredite tu identidad. Responderemos en el plazo máximo de un mes.</p>
     <p>Si consideras que el tratamiento no se ajusta a la normativa, tienes derecho a presentar una reclamación ante la <strong>Agencia Española de Protección de Datos</strong> (<a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>).</p>
 
     <h2>7. Medidas de seguridad</h2>
@@ -256,7 +274,7 @@
   <div class="wrap">
     <div class="row">
       <span>© 2026 NBI · Nexora Business Intelligence</span>
-      <span><a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a> · <a href="aviso-legal.html">Aviso legal</a></span>
+      <span><a href="privacidad">Privacidad</a> · <a href="cookies">Cookies</a> · <a href="aviso-legal">Aviso legal</a></span>
     </div>
   </div>
 </footer>

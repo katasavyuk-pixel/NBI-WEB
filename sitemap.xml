@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ianexora.com/</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ianexora.com/aviso-legal.html</loc>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://ianexora.com/aviso-legal</loc>
+    <lastmod>2026-05-10</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://ianexora.com/privacidad.html</loc>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://ianexora.com/privacidad</loc>
+    <lastmod>2026-05-10</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://ianexora.com/cookies.html</loc>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://ianexora.com/cookies</loc>
+    <lastmod>2026-05-10</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.2</priority>
   </url>
 </urlset>

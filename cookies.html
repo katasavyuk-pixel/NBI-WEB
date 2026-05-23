@@ -6,12 +6,15 @@
 <title>Política de cookies · NBI — ianexora.com</title>
 <meta name="description" content="Política de cookies de NBI · qué cookies utiliza ianexora.com y de qué proveedores de terceros, en cumplimiento de la LSSI." />
 <meta name="robots" content="noindex,follow" />
-<link rel="canonical" href="https://ianexora.com/cookies.html" />
+<link rel="canonical" href="https://ianexora.com/cookies" />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+</noscript>
 
 <style>
   :root{
@@ -99,9 +102,16 @@
   }
   .highlight-card p{ margin: 0 }
 
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 20px 0;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+  }
   table{
-    width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px;
-    border: 1px solid var(--line); border-radius: 12px; overflow: hidden;
+    width: 100%; border-collapse: collapse; font-size: 14px;
     background: var(--bg);
   }
   thead th{
@@ -125,21 +135,32 @@
 
 <nav class="nav">
   <div class="row">
-    <a href="index.html" class="brand" aria-label="NBI · Volver al inicio">
-      <svg class="brand-mark" viewBox="0 0 156 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <a href="/" class="brand" aria-label="NBI · Volver al inicio">
+      <svg class="brand-mark" viewBox="0 0 143 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <mask id="nm-ck" maskUnits="userSpaceOnUse" x="-10" y="-25" width="80" height="115">
+            <rect x="0" y="0" width="12" height="64" rx="2" fill="white"/>
+            <polygon points="12,0 24,0 40,64 28,64" fill="white"/>
+            <rect x="40" y="0" width="12" height="64" rx="2" fill="white"/>
+            <line x1="6" y1="-20" x2="45" y2="84" stroke="black" stroke-width="8"/>
+            <line x1="19" y1="-20" x2="58" y2="84" stroke="black" stroke-width="8"/>
+          </mask>
+          <mask id="bm-ck" maskUnits="userSpaceOnUse" x="52" y="-25" width="90" height="115">
+            <path fill-rule="evenodd" fill="white" d="M62,0 H95 Q113,0 113,14 Q113,24 102,29 Q120,32 120,46 Q120,64 95,64 H62 Z M74,8 V24 H95 Q102,24 102,17 Q102,8 95,8 Z M74,34 V56 H95 Q107,56 107,45 Q107,34 95,34 Z"/>
+            <line x1="70" y1="-20" x2="109" y2="84" stroke="black" stroke-width="8"/>
+            <line x1="83" y1="-20" x2="122" y2="84" stroke="black" stroke-width="8"/>
+          </mask>
+        </defs>
         <g fill="currentColor">
-          <rect x="0" y="0" width="9" height="60" rx="1"/>
-          <polygon points="9,0 18,0 54,48 54,0 63,0 63,60 54,60 18,12 18,60 9,60"/>
-          <rect class="nbi-eco" x="13" y="6" width="3" height="54" rx=".5"/>
-          <rect class="nbi-eco" x="67" y="0" width="3" height="54" rx=".5"/>
-          <path fill-rule="evenodd" d="M 80 0 H 105 Q 119 0 119 13 Q 119 23 110 27 Q 124 30 124 43 Q 124 60 105 60 H 80 Z M 89 8 V 23 H 105 Q 110 23 110 15.5 Q 110 8 105 8 Z M 89 32 V 52 H 105 Q 114 52 114 42 Q 114 32 105 32 Z"/>
-          <rect x="132" y="0" width="9" height="42" rx="1.5"/>
+          <rect mask="url(#nm-ck)" x="0" y="0" width="52" height="64"/>
+          <rect mask="url(#bm-ck)" x="62" y="0" width="60" height="64"/>
+          <rect x="126" y="0" width="10" height="44" rx="3"/>
         </g>
-        <circle class="nbi-dot" cx="136.5" cy="55" r="6.2"/>
+        <circle class="nbi-dot" cx="131" cy="57" r="7"/>
       </svg>
       <span class="brand-name">NBI</span>
     </a>
-    <a href="index.html" class="back">← Volver al inicio</a>
+    <a href="/" class="back">← Volver al inicio</a>
   </div>
 </nav>
 
@@ -156,7 +177,7 @@
         <span class="dot"></span>
         <span class="label">Resumen</span>
       </div>
-      <p>Este sitio web <strong>no instala cookies propias</strong>. La analítica que utilizamos (Plausible / Umami) funciona <strong>sin cookies</strong> y no rastrea usuarios entre sitios. Solo se instalan cookies de terceros si abres el agendador de Calendly.</p>
+      <p>Este sitio web <strong>no instala ninguna cookie (ni propia ni de terceros)</strong>. La analítica que utilizamos (Plausible / Umami) funciona <strong>sin cookies</strong>, de forma completamente anónima y respetuosa con tu privacidad.</p>
     </div>
 
     <h2>1. ¿Qué son las cookies?</h2>
@@ -183,41 +204,6 @@
       <li><a href="https://umami.is/docs/about" target="_blank" rel="noopener">Acerca de Umami</a></li>
     </ul>
 
-    <h3>3.3 Cookies de terceros (Calendly)</h3>
-    <p>Cuando pulsas un botón para reservar una llamada, se abre el widget de <strong>Calendly</strong> integrado en la página. En ese momento Calendly puede instalar las siguientes cookies en tu navegador:</p>
-
-    <table>
-      <thead>
-        <tr><th>Cookie</th><th>Proveedor</th><th>Finalidad</th><th>Duración</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><code>_calendly_session</code></td>
-          <td>Calendly</td>
-          <td>Mantener la sesión activa durante la reserva</td>
-          <td>Sesión</td>
-        </tr>
-        <tr>
-          <td><code>__cf_bm</code></td>
-          <td>Cloudflare (CDN de Calendly)</td>
-          <td>Detección de bots y seguridad</td>
-          <td>30 minutos</td>
-        </tr>
-        <tr>
-          <td><code>_gcl_au</code></td>
-          <td>Google (vía Calendly)</td>
-          <td>Atribución de conversiones (analítica de Calendly)</td>
-          <td>3 meses</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p>Estas cookies se rigen por la política de privacidad de cada proveedor:</p>
-    <ul>
-      <li><a href="https://calendly.com/privacy" target="_blank" rel="noopener">Política de privacidad de Calendly</a></li>
-      <li><a href="https://calendly.com/pages/cookies" target="_blank" rel="noopener">Política de cookies de Calendly</a></li>
-    </ul>
-
     <h2>4. Cómo gestionar o desactivar las cookies</h2>
     <p>Puedes configurar tu navegador para que rechace cookies, te avise antes de aceptarlas o las elimine al cerrar la ventana. A continuación enlaces a las instrucciones de los navegadores más comunes:</p>
     <ul>
@@ -226,13 +212,13 @@
       <li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Apple Safari</a></li>
       <li><a href="https://support.microsoft.com/es-es/microsoft-edge" target="_blank" rel="noopener">Microsoft Edge</a></li>
     </ul>
-    <p>Ten en cuenta que si bloqueas todas las cookies de terceros, el widget de Calendly puede no funcionar correctamente. En ese caso siempre puedes escribirnos directamente a <a href="mailto:nexoraprocesos@gmail.com">nexoraprocesos@gmail.com</a>.</p>
+    <p>Dado que este sitio web no utiliza ninguna cookie, bloquearlas o eliminarlas en tu navegador no afectará en absoluto a tu experiencia de usuario ni a la funcionalidad del sitio.</p>
 
     <h2>5. Cambios en esta política</h2>
-    <p>Podemos actualizar esta política para reflejar cambios técnicos o nuevos servicios. Cuando integremos un nuevo proveedor que utilice cookies, lo añadiremos a la tabla y actualizaremos la fecha en el encabezado.</p>
+    <p>Podemos actualizar esta política para reflejar cambios técnicos o nuevos servicios. Si en el futuro integramos algún servicio que requiera cookies, lo detallaremos aquí e informaremos a través de la web.</p>
 
     <h2>6. Más información</h2>
-    <p>Para cualquier consulta sobre esta política puedes escribirnos a <a href="mailto:nexoraprocesos@gmail.com">nexoraprocesos@gmail.com</a> o consultar nuestra <a href="privacidad.html">Política de privacidad</a>.</p>
+    <p>Para cualquier consulta sobre esta política puedes escribirnos a <a href="mailto:info@ianexora.com">info@ianexora.com</a> o consultar nuestra <a href="privacidad">Política de privacidad</a>.</p>
   </div>
 </main>
 
@@ -240,7 +226,7 @@
   <div class="wrap">
     <div class="row">
       <span>© 2026 NBI · Nexora Business Intelligence</span>
-      <span><a href="privacidad.html">Privacidad</a> · <a href="cookies.html">Cookies</a> · <a href="aviso-legal.html">Aviso legal</a></span>
+      <span><a href="privacidad">Privacidad</a> · <a href="cookies">Cookies</a> · <a href="aviso-legal">Aviso legal</a></span>
     </div>
   </div>
 </footer>

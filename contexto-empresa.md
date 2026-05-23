@@ -23,7 +23,7 @@ Cuando algo cambie en la empresa, actualizar aquí primero — luego reflejar en
 
 | Campo | Valor |
 |---|---|
-| **Email** | nexoraprocesos@gmail.com |
+| **Email** | info@ianexora.com |
 | **Calendly** | https://calendly.com/nexoraprocesos/30min |
 | **LinkedIn Katalin** | *pendiente añadir* |
 | **LinkedIn Keoma** | *pendiente añadir* |
@@ -33,11 +33,11 @@ Cuando algo cambie en la empresa, actualizar aquí primero — luego reflejar en
 
 ## Founders
 
-### Katalin Ivanovych
+### Katalin Savyuk
 - **Rol en la web:** Founder · Estrategia & Producto
-- **Foto:** `images/katalin.jpg` — pendiente
+- **Foto:** `images/katalin.jpg` — ✅ subida
 - **Bio web:**
-  > Construye NBI desde la visión: convertir agentes IA en infraestructura productiva para PYMEs. Lidera estrategia, producto y la relación con cada cliente en el diagnóstico inicial.
+  > Construye NBI desde la visión: convertir agentes IA en infraestructura productiva para empresas. Lidera estrategia, producto y la relación con cada cliente en el diagnóstico inicial.
 
 ### Keoma Pacheco
 - **Rol en la web:** Founder · Operaciones & Proyectos
@@ -47,48 +47,38 @@ Cuando algo cambie en la empresa, actualizar aquí primero — luego reflejar en
 
 ---
 
-## Los 3 Productos (orden en la web)
+## Portafolio de Agentes IA (estructura en la web)
 
-### 1. Sistema Logística (producto estrella · destacado en la web)
-- **Badge:** PRODUCTO · LOGÍSTICA & TRANSPORTE
-- **Descripción:** El agente lee pedidos de transporte por email (PDF, Excel, texto libre, imagen), valida los datos contra el ERP del cliente y crea la orden en su TMS automáticamente. Hasta un 96% de reducción de tiempo por pedido procesado.
-- **Lo que incluye:**
-  - Parser inteligente: PDF, texto libre, Excel, imagen
-  - Validación contra ERP (Sage, Odoo, SAP, propios)
-  - Integración con TMS (Generix, Lis, sistemas propios)
-  - Excepciones humanas con trazabilidad completa
-- **Setup:** 2–4 semanas
-- **Precio interno:** 1.500€ setup + 500€/mes (no se muestra en la web)
-- **CTA web:** "Ver demo en vivo →"
-- **Animación web:** flow INPUT (email entrante) → AGENT (procesando) → OUTPUT (orden creada en TMS)
+### 1. Agentes IA de Procesos (Agentes estándar pre-entrenados)
+- **Descripción:** Desplegamos agentes de IA pre-entrenados y configurados que asumen tareas repetitivas de entrada de datos y gestión documental en departamentos clave.
+- **Agentes incluidos:**
+  - **Agente de Finanzas y Administración**: Extracción automática de facturas de compras, albaranes, notas de gastos y creación de asientos contables en Sage, Odoo, Holded o ERPs propietarios.
+  - **Agente de Soporte y CRM**: Clasificación inteligente de correos entrantes, redacción de respuestas borrador en Helpdesk, creación y enrutado de tickets en HubSpot o Zendesk, y alertas en Slack.
+  - **Agente de Logística y Operaciones**: Lectura y validación de órdenes de carga, albaranes y facturas de transporte, con volcado automático en el TMS o ERP del cliente. *(La vía de transporte es un caso de uso representativo de este agente).*
+- **Setup:** 2–4 semanas de configuración y entrenamiento inicial por agente.
+- **Precio interno:** 1.500€ setup + 500€/mes (no visible en la web).
 
-### 2. Diagnóstico Nexora (puerta de entrada)
-- **Badge:** PUNTO DE ENTRADA
-- **Descripción:** La puerta de entrada para todos los clientes. Auditamos procesos, identificamos los cuellos de botella reales y entregamos un plan de acción priorizado por ROI.
-- **Lo que incluye:**
-  - Análisis de procesos y herramientas actuales
-  - Roadmap priorizado por ROI
-  - Estimación de ahorro mensual en horas
-  - Quick wins listos para implementar
-- **Duración:** 5–10 días
-- **Precio interno:** 500–1.500€ (no se muestra en la web — se cualifica en llamada)
-- **CTA web:** "Reservar diagnóstico →"
-- **Animación web:** mini-flow Auditoría procesos → Análisis ROI → Plan de acción
-
-### 3. Agentes Custom (a medida)
+### 2. Agentes Custom (a medida)
 - **Badge:** A MEDIDA
-- **Descripción:** Cuando el caso del cliente no encaja en una caja: diseñamos un agente desde cero para su departamento o flujo único.
+- **Descripción:** Diseñamos y desarrollamos agentes desde cero para flujos de trabajo únicos o altamente complejos que involucran múltiples departamentos o bases de datos legacy.
 - **Casos de uso:**
-  - Atención al cliente automatizada
-  - Procesamiento de facturas y compras
-  - Onboarding de empleados / clientes
-  - Análisis y reporting recurrente
-- **Sprint:** 4–8 semanas
-- **Precio interno:** 2.000–10.000€ por proyecto (solo por referido)
-- **CTA web:** "Hablar con Katalin →"
-- **Animación web:** mini-flow Discovery → Diseño & build → Producción
+  - Automatizaciones complejas multi-herramienta sin APIs públicas.
+  - Sincronización profunda de bases de datos internas con lógica empresarial personalizada.
+- **Duración:** Sprint de 4–8 semanas.
+- **Precio interno:** 2.000–10.000€ (no visible en la web).
 
-> **Nota sobre MaitreAI:** retirado de la web pública en mayo 2026. El producto sigue existiendo internamente en NBI pero ya no se promueve como uno de los productos cara al exterior. Cuando entre un lead de hostelería, se cualifica como Custom o se redirige al diagnóstico.
+### 3. Diagnóstico Nexora (puerta de entrada)
+- **Badge:** PUNTO DE ENTRADA / METODOLOGÍA
+- **Descripción:** Auditoría inicial para evaluar la viabilidad de la automatización en el cliente, mapear cuellos de botella y justificar el ROI del proyecto antes de escribir código.
+- **Lo que incluye:**
+  - Mapeo y modelado de procesos manuales actuales.
+  - Estimación garantizada de ahorro mensual en horas.
+  - Roadmap priorizado por retorno de inversión (ROI).
+- **Duración:** 5–10 días.
+- **Precio interno:** 500–1.500€ (no visible en la web).
+
+> **Nota sobre MaitreAI:** retirado de la web pública en mayo 2026. El producto sigue existiendo internamente en NBI pero ya no se promueve como uno de los productos cara al exterior.
+
 
 ---
 
@@ -116,7 +106,7 @@ Cuando algo cambie en la empresa, actualizar aquí primero — luego reflejar en
 ## FAQ — Respuestas oficiales
 
 **¿Cuánto tarda en estar funcionando?**
-El diagnóstico se entrega en 5–10 días. Sistema Logística está operativo en 2–4 semanas. Un agente a medida está en producción en 4–8 semanas según complejidad.
+El diagnóstico se entrega en 5–10 días. Nuestros Agentes de Procesos están operativos en 2–4 semanas. Un agente a medida está en producción en 4–8 semanas según complejidad.
 
 **¿Necesito conocimientos técnicos?**
 No. Nos encargamos de todo el setup técnico, integraciones y mantenimiento. Tú recibes un panel con métricas y canal directo para incidencias.
@@ -137,11 +127,12 @@ Logística y transporte (procesamiento de pedidos, integración con TMS), servic
 
 ## Reglas de comunicación en la web
 
-- **No mostrar precios** en la web — se cualifica en llamada de diagnóstico
-- **No prometer resultados exactos** — usar "objetivo", "estimado", "diseñado para"
-- **Sí mostrar casos de uso específicos** — logística (email → TMS), hostelería (WhatsApp → reserva)
-- **Tono:** directo, técnico pero accesible, sin buzzwords vacíos ("solución innovadora", "revolucionar")
-- **CTA principal siempre:** diagnóstico → no vender producto directamente
+- No mostrar precios en la web — se cualifica en llamada de diagnóstico
+- No prometer resultados exactos — usar "objetivo", "estimado", "diseñado para"
+- Sí mostrar casos de uso específicos — Finanzas (email/factura → ERP), Soporte (email → CRM/Slack), Logística (email → TMS/ERP)
+- Tono: directo, técnico pero accesible, sin buzzwords vacíos ("solución innovadora", "revolucionar")
+- CTA principal siempre: diagnóstico — no vender producto directamente
+- Clarificar modelo de negocio: Enfatizar que NBI diseña agentes de IA para múltiples departamentos y procesos repetitivos, usando la logística como caso representativo de especialización pero sin limitarse a ella.
 
 ---
 
@@ -150,6 +141,7 @@ Logística y transporte (procesamiento de pedidos, integración con TMS), servic
 | Fecha | Cambio |
 |---|---|
 | Mayo 2026 | Primera versión completa. Movida de LogisticaYtransportes worktree a carpeta propia. Fotos pendientes. |
-| 9 mayo 2026 | v2 pre-deploy. Dominio decidido (`ianexora.com`). Añadido: meta tags + Open Graph + Twitter Card, Schema.org JSON-LD, favicon SVG, og-image SVG, banner de cookies, scroll-to-top, fallback de iniciales en founders, form CTA con validación de email, focus-visible accesible, mobile breakpoints adicionales. Páginas legales nuevas: `aviso-legal.html`, `privacidad.html`, `cookies.html`. Assets de SEO: `robots.txt`, `sitemap.xml`. Pendientes para deploy: subir fotos founders, añadir LinkedIn URLs, contratar dominio + Plausible, validar legales con abogado, deploy a Vercel/Netlify. |
-| 9 mayo 2026 (v3) | Rediseño completo a paleta light (blanco + azul oscuro `#1a2440` del logo + cyan `#00d4ff` accent). Logo NBI! integrado como SVG en nav, footer, favicon, og-image y páginas legales. Frase "Aceptando primeros pilotos · Q2 2026" sustituida por "IA aplicada a operaciones reales". Tagline cambiada de "Estado" a "Tagline secundaria" porque ya no caduca. |
-| 9 mayo 2026 (v4) | Hostelería y MaitreAI retirados de la web pública. Productos pasan de 4 a 3: Sistema Logística (featured arriba con animación INPUT→AGENT→OUTPUT), Diagnóstico (mini-flow Auditoría→Análisis→Plan), Agentes Custom (mini-flow Discovery→Diseño→Producción). Hero subtítulo simplificado: "Un agente, un trabajo". Trust strip ahora muestra procesos (no sectores). Feed simulado actualizado a pedidos + atención al cliente. FAQ y schema actualizados sin hostelería. |
+| 9 mayo 2026 | v2 pre-deploy. Dominio decidido (`ianexora.com`). Añadido: meta tags + Open Graph + Twitter Card, Schema.org JSON-LD, favicon SVG, og-image SVG, banner de cookies, scroll-to-top, fallback de iniciales en founders, form CTA con validación de email, focus-visible accesible, mobile breakpoints adicionales. Páginas legales nuevas: `aviso-legal.html`, `privacidad.html`, `cookies.html`. Assets de SEO: `robots.txt`, `sitemap.xml`. |
+| 9 mayo 2026 (v3) | Rediseño completo a paleta light (blanco + azul oscuro `#1a2440` del logo + cyan `#00d4ff` accent). Logo NBI! integrado como SVG en nav, footer, favicon, og-image y páginas legales. |
+| 9 mayo 2026 (v4) | Hostelería y MaitreAI retirados de la web pública. Productos pasan de 4 a 3: Sistema Logística (featured arriba con animación INPUT→AGENT→OUTPUT), Diagnóstico (mini-flow Auditoría→Análisis→Plan), Agentes Custom (mini-flow Discovery→Diseño→Producción). Hero subtítulo simplificado: "Un agente, un trabajo". |
+| 22 mayo 2026 (v5) | Clarificación del modelo de negocio multiproceso. Se reestructura la landing para presentar a NBI como creador de Agentes IA para Finanzas, Soporte y Logística. Se independiza la sección de proceso y se adapta el simulador interactivo para que demuestre los 3 tipos de agentes con su propio estilo y datos. |

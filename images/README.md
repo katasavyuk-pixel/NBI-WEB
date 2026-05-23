@@ -6,8 +6,8 @@ Hasta que se añadan estas fotos, la web muestra "Falta la foto" en la sección 
 
 | Archivo | Persona | Estado |
 |---|---|---|
-| `katalin.jpg` | Katalin Ivanovych — Founder Estrategia & Producto | ❌ Pendiente |
-| `keoma.jpg` | Keoma Pacheco — Operaciones & Proyectos | ❌ Pendiente |
+| `katalin.jpg` | Katalin Savyuk — Founder Estrategia & Producto | ✅ Subida |
+| `keoma.jpg` | Keoma Pacheco — Operaciones & Proyectos | ✅ Subida |
 
 ## Formato recomendado
 
