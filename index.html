@@ -1995,15 +1995,24 @@
   }
   .final p{ margin-top:22px; max-width: 56ch; color: var(--ink-2); font-size: 17px }
   .final form{
-    margin-top: 36px; display:flex; gap: 10px; max-width: 540px;
+    margin-top: 36px; max-width: 540px;
+  }
+  .final .cta-input-row{
+    display:flex; gap: 10px;
     border:1px solid var(--line-2); border-radius: 999px; padding: 6px;
     background: var(--bg);
     box-shadow: var(--shadow-sm);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .final .cta-input-row:focus-within {
+    border-color: var(--cyan);
+    box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.15), var(--shadow-sm);
   }
   .final input{
     flex:1; min-width: 0;
     background: transparent; border:0; padding: 12px 18px;
     color: var(--ink); font: inherit; font-size:15px;
+    outline: none;
   }
   .final input::placeholder{ color: var(--ink-dim) }
 
@@ -2011,7 +2020,7 @@
     .final {
       padding: 32px 24px;
     }
-    .final form {
+    .final .cta-input-row {
       flex-direction: column;
       border: 0;
       background: transparent;
@@ -2026,8 +2035,14 @@
       border-radius: var(--radius-md);
       padding: 14px 18px;
       width: 100%;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
     }
-    .final form button.btn {
+    .final input:focus-visible {
+      border-color: var(--cyan);
+      box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.15);
+      outline: none;
+    }
+    .final .cta-input-row button.btn {
       width: 100%;
       justify-content: center;
       padding: 14px 20px;
@@ -4290,16 +4305,18 @@
       <p>Reserva un diagnóstico NBI. En 30 minutos sabremos si tu operación es un buen candidato para automatizar — y qué empezarías a ahorrar.</p>
 
       <form id="ctaForm" novalidate>
-        <label class="visually-hidden" for="ctaEmail">Tu email corporativo</label>
-        <input id="ctaEmail" name="email" type="email" inputmode="email" autocomplete="email" spellcheck="false" placeholder="tu-email@empresa.com…" aria-label="Tu email corporativo" required />
+        <div class="cta-input-row">
+          <label class="visually-hidden" for="ctaEmail">Tu email corporativo</label>
+          <input id="ctaEmail" name="email" type="email" inputmode="email" autocomplete="email" spellcheck="false" placeholder="tu-email@empresa.com…" aria-label="Tu email corporativo" required />
+          <button type="submit" class="btn btn-primary">
+            Solicitar diagnóstico
+            <span class="arr">→</span>
+          </button>
+        </div>
         <label for="ctaConsent" style="display:flex;align-items:flex-start;gap:10px;margin:16px 0 4px;font-size:13px;color:rgba(255,255,255,.72);line-height:1.55;cursor:pointer;text-align:left;max-width:540px">
           <input id="ctaConsent" name="consent" type="checkbox" required style="margin-top:3px;accent-color:#00d4ff;cursor:pointer;flex-shrink:0" />
           <span>He leído y acepto la <a href="privacidad" target="_blank" rel="noopener" style="color:#67e8ff;border-bottom:1px solid rgba(103,232,255,.4)">política de privacidad</a> y el tratamiento de mi email para responder a esta consulta (RGPD art. 6.1.a).</span>
         </label>
-        <button type="submit" class="btn btn-primary">
-          Solicitar diagnóstico
-          <span class="arr">→</span>
-        </button>
       </form>
       <div id="formError" class="form-error" role="alert" aria-live="polite">Introduce un email válido y acepta la política de privacidad para continuar.</div>
       <div class="or">o escríbenos a · <a href="mailto:info@ianexora.com">info@ianexora.com</a></div>
@@ -4600,7 +4617,8 @@ ctaForm.addEventListener('submit', e => {
   const orig = btn.innerHTML;
   btn.innerHTML = '✓ Redactando email…';
   btn.style.background = 'linear-gradient(135deg,#10b981,#34d399)';
-  input.value = '';
+  ctaEmailInput.value = '';
+  ctaConsentInput.checked = false;
   setTimeout(()=>{ btn.innerHTML = orig; btn.style.background=''; }, 3500);
 });
 
